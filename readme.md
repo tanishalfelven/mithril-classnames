@@ -14,3 +14,9 @@ m("div", {
     )
 });
 ```
+
+## Installation
+
+```
+npm install https://github.com/tanishalfelven/mithril-classnames.git
+```
