@@ -1,7 +1,8 @@
+/* eslint-disable */
 (function() {
-"use strict"
+"use strict";
 
-function classnames() {
+function classnames(...args) {
     args.forEach((className, i) => {
         if (Array.isArray(className)) {
             const [ condition, trueClass, falseClass ] = className;
@@ -21,8 +22,8 @@ function classnames() {
     return args.join(" ");
 };
 
-if (typeof module !== "undefined") module["exports"] = classnames;
-else if (typeof window.m === "function" && !("classnames" in window.m)) window.m.classnames = classnames
+if (typeof window.m === "function" && !("classnames" in window.m)) window.m.classnames = classnames
 else window.m = {classnames : classnames};
 
 }());
+    
